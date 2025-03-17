@@ -16,12 +16,43 @@
             <p>Click the button below to download the zip file containing the CTF challenge:</p>
             <a href="ctf.zip" class="download-button" download>Secret Hex Fish Download</a>
         </section>
+
         <section>
-            <h2>Instructions</h2>
+            <h2>Description/Instructions</h2>
+            <p>Description: Download the zip file and unzip the file, then navigate to the file in your shell/terminal to begin. Navigate the files to find the hidden golden fish flag. You may use the link to the decoding website below to decode coded messages! Submit the found flag in the submit box below to see if you got the correct flag!</p>
+            <p><a href="https://www.rapidtables.com/convert/number/hex-to-ascii.html" class="download-button">Tool</a></p>
             <p>1. Download the zip file</p>
             <p>2. Extract the contents</p>
             <p>3. Follow the instructions.txt file for further guidance</p>
+            
+            <button onclick="revealHints()" class="download-button">Reveal Hints</button>
+            
+            <div id="hints" style="display: none;">
+              <h3>Hints:</h3>
+              <ol>
+                <li>Use commands like ls, cat, cd, and more to navigate through the files</li>
+                <li>Are you sure everything is visible?</li>
+              </ol>
+            </div>
+          
+            <script>
+              function revealHints() {
+                var hints = document.getElementById("hints");
+                if (hints.style.display === "none") {
+                  hints.style.display = "block";
+                } else {
+                  hints.style.display = "none";
+                }
+              }
+            </script>
         </section>
+
+        <section>
+            <h2>Tags and Categories</h2>
+            <p><strong>Categories:</strong> Hexadecimal decoding, file navigation</p>
+            <p><strong>Tags:</strong> Hexadecimal, Binary, File Navigation, Secret Files</p>
+        </section>
+          
         <section>
             <h2>Check Your Flag</h2>
             <form id="flag-form">
