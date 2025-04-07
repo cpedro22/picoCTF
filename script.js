@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const flagInput = document.getElementById('flag-input');
     const flagResult = document.getElementById('flag-result');
 
-    const correctFlag = 'CTF{1maF15Hand1mG0ld3n}';
+    const correctFlag = 'ITC101{1maF15Hand1mG0ld3n}';
 
     flagForm.addEventListener('submit', (e) => {
         e.preventDefault();
